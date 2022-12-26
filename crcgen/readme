@@ -1,0 +1,5 @@
+connect to port 9031 (nc 0 9031). the 'crcgen' binary will be executed under crcgen_pwn privilege.
+pwn it and get a shell and read the flag.
+* this challenge uses given crcgen.so.6 binary as LIBC
+* challenge author: Caesurus
+
