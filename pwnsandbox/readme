@@ -1,0 +1,2 @@
+connect to port 9028 (nc 0 9028). the 'pwnsandbox' binary will be executed under pwnsandbox_pwn privilege.
+pwn it and get a shell and read the flag.
