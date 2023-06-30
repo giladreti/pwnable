@@ -1,0 +1,4 @@
+the 'mipstake' binary is running at localhost 9033 (nc 0 9033).
+QEMU config: qemu-system-mips -M malta -kernel vmlinux-3.2.0-4-4kc-malta -hda debian_wheezy_mips_standard.qcow2 -append "root=/dev/sda1 console=ttyS0" -net nic -net user,hostfwd=tcp:0.0.0.0:9033-10.0.2.15:9033 -nographic -monitor none
+get a shell and read flag.
+
