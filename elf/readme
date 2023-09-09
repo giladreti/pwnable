@@ -1,0 +1,3 @@
+the "elf.py" script will be executed under elf_pwn privilege if you connect to port 9024.
+execute the script by connecting to daemon(nc 0 9024) then get the flag.
+
