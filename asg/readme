@@ -1,0 +1,3 @@
+once you connect to port 9025, the "asg" binary will be executed under asg_pwn privilege.
+make connection to challenge (nc 0 9025) then get the flag.
+
