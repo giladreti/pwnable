@@ -1,0 +1,2 @@
+connect to port 9027 (nc 0 9027). the 'lokihardt' binary will be executed under lokihardt_pwn privilege.
+pwn it and get a shell and read the flag.
