@@ -1,0 +1,1 @@
+once you connect to port 9009, the "blackjack" binary will be executed under asm_pwn privilege. get flag.
