@@ -1,3 +1,4 @@
+// gcc -o unlink unlink.c -m32 -fno-stack-protector -no-pie
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -8,6 +9,7 @@ typedef struct tagOBJ{
 }OBJ;
 
 void shell(){
+	setregid(getegid(), getegid());
 	system("/bin/sh");
 }
 
@@ -20,7 +22,7 @@ void unlink(OBJ* P){
 	BK->fd=FD;
 }
 int main(int argc, char* argv[]){
-	malloc(1024);
+	malloc(2048);
 	OBJ* A = (OBJ*)malloc(sizeof(OBJ));
 	OBJ* B = (OBJ*)malloc(sizeof(OBJ));
 	OBJ* C = (OBJ*)malloc(sizeof(OBJ));
