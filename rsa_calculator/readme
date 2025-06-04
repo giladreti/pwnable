@@ -1,0 +1,4 @@
+nc 0 9012
+get shell.
+you can start the service if its down
+nc 0 2000 if service is down
