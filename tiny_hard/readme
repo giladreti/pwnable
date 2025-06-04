@@ -1,0 +1,2 @@
+tiny_hard running at nc 0 9041
+nc 0 2000 to wake up docker.
