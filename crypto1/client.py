@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 from Crypto.Cipher import AES
 import base64
 import os, sys
@@ -12,11 +12,11 @@ EncodeAES = lambda c, s: c.encrypt(pad(s)).encode('hex')
 DecodeAES = lambda c, e: c.decrypt(e.decode('hex'))
 
 # server's secrets
-key = 'erased. but there is something on the real source code'
-iv = 'erased. but there is something on the real source code'
-cookie = 'erased. but there is something on the real source code'
+key = 'erased'
+iv = '\x5c'*BLOCK_SIZE
+cookie = 'erased'
 
-# guest / 8b465d23cb778d3636bf6c4c5e30d031675fd95cec7afea497d36146783fd3a1
+# guest / a488ff12949b87e5c93d489c27217486702b179c060399adf36fc3bc1f5425ec
 def sanitize(arg):
 	for c in arg:
 		if c not in '1234567890abcdefghijklmnopqrstuvwxyz-_':
