@@ -16,7 +16,6 @@ class MyTimer():
 
 def pwn( payload ):
 	p = subprocess.Popen('./wtf', stdin=subprocess.PIPE, stdout=subprocess.PIPE)
-	raw_input("wait")
 	p.stdin.write( payload )
 	output = p.stdout.readline()
 	return output
@@ -49,8 +48,8 @@ if __name__ == '__main__':
 		print 'thanks! let me try if your payload works...'
 		sys.stdout.flush()
 
-		# time.sleep(1)
-		# MyTimer()
+		time.sleep(1)
+		MyTimer()
 		result = pwn( payload )
 		if len(result) == 0:
 			print 'your payload sucks! :('
