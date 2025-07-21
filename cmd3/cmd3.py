@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 import base64, random, math
 import os, sys, time, string
 from threading import Timer

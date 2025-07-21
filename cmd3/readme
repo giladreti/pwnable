@@ -1,0 +1,4 @@
+if you connect to port 9023, the "cmd3.py" script will be executed under cmd3_pwn privilege.
+type 'nc 0 9023' to play this challenge.  have fun escaping from rbash jail :)
+FYI, 'print_flag' is the program which prints out the flag of cmd3.
+
