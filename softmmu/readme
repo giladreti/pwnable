@@ -1,0 +1,2 @@
+softmmu running at nc 0 9900
+nc 0 2000 if service is down
