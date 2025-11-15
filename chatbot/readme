@@ -1,0 +1,2 @@
+chatbot running at nc 0 9044
+nc 0 2000 if service is down
