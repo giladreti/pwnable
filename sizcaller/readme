@@ -1,0 +1,2 @@
+sizcaller running at nc 0 9047
+nc 0 2000 if service is down
